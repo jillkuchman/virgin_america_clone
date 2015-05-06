@@ -1,0 +1,22 @@
+<!-- <h1>Hey</h1>
+
+    <select ng-model="departure-city">
+        <option ng-repeat="item in departures" value="{{ item.city_name }}">{{ item.city_name }}</option>
+    </select> -->
+
+    <!-- <select >
+        <option ng-repeat="item in | filter:departure-city">
+    </select> -->
+<!-- <ul>
+    <li> {{ item.arrivals}}
+</ul>
+
+<button ng-click="airportPicker()"></button> -->
+
+<ul>
+    <li ng-repeat="item in departures" ng-click="airportPicker(item)">{{ item.city_name }}</li>
+</ul>
+
+<ul>
+    <li ng-repeat="item in pickedAirport.arrivals">{{ item }}</li>
+</ul>
